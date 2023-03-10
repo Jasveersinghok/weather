@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+<div class="navbar">
+  <nav>
+    <div class="navbarItems">
+      <div class="logo" id="logo">
+        <img class="logoImg" src="./images/logo.png" alt=""> 
+        <h1>Weather</h1>
+      </div>
+      <ul>
+      <li class="listWidth">Home</li>
+      <li class="listWidth">About Us</li>
+      <li class="listWidth">Contact Us</li> 
+    </ul>  
+    <div class="search right">
+      <input type="text" class="input" id="input" placeholder="Enter city name">
+      <button id="submit" class="button"> search</button>
+    </div>  
+    </div>
+  </nav>
+
+</div> 
+<h1 id="cityName"></h1>
+<!-- <img id="mainImage" src="https://openweathermap.org/img/wn/01d@2x.png" alt="logo"> -->
+<!-- card 1 -->
+<div class="container">
+  <div class="card">
+    <h1>Humidity</h1>
+    <img src="./images/humidity.png" class="icon" alt="humidity">
+    <p class="infoWidth" id="humidity">Humidity </p>
+    <p class="infoWidth" id="pressure"> pressure </p>
+    <p class="infoWidth" id="visibility">visibility </p>
+  </div>
+  <!-- 2nd card -->
+  <div class="card">
+    <h1>Temprature</h1>
+    <img src="./images/temprature.png" class="icon" alt="humidity">
+    <p class="infoWidth" id="temp">Temprature is </p>
+    <p class="infoWidth" id="temp_min"> temp Min </p>
+    <p class="infoWidth" id="temp_max">Temp max </p>
+  </div>
+  <!-- 3rd card -->
+  <div class="card">
+    <h1>Wind</h1>
+    <img src="./images/wind.png" class="icon" alt="humidity">
+    <p class="infoWidth" id="speed">speed</p>
+    <p class="infoWidth" id="deg"> wind degree</p>
+    <p class="infoWidth" id="gust">gust </p>
+  </div>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
